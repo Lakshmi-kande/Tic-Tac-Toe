@@ -33,7 +33,7 @@ function handlePlayerChange() {
 
 function handleResultValidation() {
     let roundWon = false;
-    for (const i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 7; i++) {
         const winCondition = winningConditions[i];
         let a = gameState[winCondition[0]];
         let b = gameState[winCondition[1]];
